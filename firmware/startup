@@ -1,6 +1,7 @@
 term.clear()
 term.setCursorPos(1,1)
 
+-- load firmware file
 os.run({}, "/ccuefi/firmware/main.lua")
 
-while true do sleep(100) end
+os.shutdown()
