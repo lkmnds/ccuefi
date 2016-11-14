@@ -1,12 +1,12 @@
 
-local F_STDOUT = 0
-local F_STDIN = 1
-local F_STDERR = 2
+F_STDOUT = 0
+F_STDIN = 1
+F_STDERR = 2
 
-local E_OK = 0
-local E_ERR = 1
-local E_READY = 2
-local E_NOT_READY = 3
+E_OK = 0
+E_ERR = 1
+E_READY = 2
+E_NOT_READY = 3
 
 function read_keys(len)
     local count = 0
@@ -31,9 +31,9 @@ function read_keys(len)
     return txt
 end
 
-function get_keystroke(fd, key)
+function get_keystroke(fd)
     if fd == STDIN then
-        key = read_keys(1)
+        local key = read_keys(1)
         if key then
             return E_READY, key
         else
@@ -42,4 +42,15 @@ function get_keystroke(fd, key)
     else
         return E_ERR
     end
+end
+
+function pout(fd, str)
+    if fd == F_STDOUT then
+        print(str)
+    elseif fd == F_STDERR then
+        printError(str)
+    else
+        return E_ERR
+    end
+    return E_OK
 end

@@ -34,15 +34,19 @@ end
 local basic = load_file("/ccuefi/firmware/basic.lua")
 
 function ccuefi_main()
-    print("Hello, World!")
+    basic.pout(basic.F_STDOUT, "Hello, World!")
 
-    -- so it doesn't finish fast
+    --[[ TODO: fix that
     while true do
-        local status, key = basic.get_keystroke(basic.F_STDIN, key)
-        if status ~= basic.E_NOT_READY then
+        local status, key = basic.get_keystroke(basic.F_STDIN)
+        if status == basic.E_READY then
             break
         end
+        sleep(0)
     end
+    ]]
+
+    sleep(5)
 
     return 0
 end
