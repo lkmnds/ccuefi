@@ -5,7 +5,7 @@ CCUEFI Page 0 - Definition
 
 **CCUEFI** Is the ComputerCraft version of UEFI, it is made to make multiboot simple(Including booting by an external media), it defines all things a firmware must do to run CCUEFI-compatible operating systems.
 
-In this folder there are 2 pages, each one describes:
+Index of Pages in this folder:
  * `CCUEFI_0.md` - Definition of CCUEFI
  * `CCUEFI_1.md` - Booting
   * `CCUEFI_1_1.md` - System Folders
