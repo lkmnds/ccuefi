@@ -1,4 +1,4 @@
-CCUEFI Page 1.2 - System Files
+CCUEFI Page 1.1 - System Files
 ================================
 
 Some files and folders are protected by a CCUEFI firmware.

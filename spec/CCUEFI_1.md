@@ -1,7 +1,7 @@
 CCUEFI Page 1 - Booting
 =======================
 
-A CCUEFI-compatible firmware(CCUEFI firmware from now on) is a boot manager which loads EFI files which can do anything, including loading an operating system bootloader, which can load an operating system.
+A CCUEFI-compatible firmware(CCUEFI firmware from now on) is a boot manager which loads scripts which can do (almost) anything, including loading an operating system bootloader, which can load an operating system.
 
 CCUEFI firmwares need to implement basic features(each one defined in its own page)(In order):
  * *System Folders* - `CCUEFI_1_2.md`

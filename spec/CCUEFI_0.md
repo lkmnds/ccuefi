@@ -8,3 +8,7 @@ CCUEFI Page 0 - Definition
 In this folder there are 2 pages, each one describes:
  * `CCUEFI_0.md` - Definition of CCUEFI
  * `CCUEFI_1.md` - Booting
+  * `CCUEFI_1_1.md` - System Folders
+ * `CCUEFI_2.md` - Firmware Files
+ * `CCUEFI_3.md` - Shell Enviroment
+ * `CCUEFI_4.md` - Extensions
