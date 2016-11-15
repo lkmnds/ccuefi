@@ -20,8 +20,8 @@ When a CCUEFI firmware is booting, it can be on two modes, *User Mode* and *Debu
 
 CCUEFI firmwares need to implement basic features(each one defined in its own page)(In order):
  * *System Folders* - `CCUEFI_1_2.md`
- * *Firmware Files(FF)* - `CCUEFI_2.md`
-  * *Detection of FF in FFSF* - `CCUEFI_2_1.md`
-  * *Loading FF from network* - `CCUEFI_2_2.md`
+ * TODO: *Firmware Files(FF)* - `CCUEFI_2.md`
+  * TODO: *Detection of FF in FFSF* - `CCUEFI_2_1.md`
+  * TODO: *Loading FF from network* - `CCUEFI_2_2.md`
  * *Shell Enviroment* - `CCUEFI_3.md`
- * *Extensions* - `CCUEFI_4.md`
+ * TODO: *Extensions* - `CCUEFI_4.md`
