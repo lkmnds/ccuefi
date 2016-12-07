@@ -32,7 +32,7 @@ function read_keys(len)
 end
 
 function get_keystroke(fd)
-    if fd == STDIN then
+    if fd == F_STDIN then
         local key = read_keys(1)
         if key then
             return E_READY, key
@@ -44,11 +44,11 @@ function get_keystroke(fd)
     end
 end
 
-function pout(fd, str)
+function pout(fd, ...)
     if fd == F_STDOUT then
-        print(str)
+        print(...)
     elseif fd == F_STDERR then
-        printError(str)
+        printError(...)
     else
         return E_ERR
     end
